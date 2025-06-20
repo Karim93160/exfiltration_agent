@@ -1,4 +1,5 @@
 pycryptodome
+pycryptodomex
 requests
 dnspython
 dash
