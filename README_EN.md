@@ -3,7 +3,7 @@
 # Exfiltration-Agent:
 *The Stealthy Data Exfiltration Tool for Red Teams*
 ## Example of use :
-![GitHubGif](https://github.com/Karim93160/Dark-Web/blob/e4cbe52ef904a503e244a9a91febb626a01fbee4/1000100626.gif.gif)
+![GitHub Gif](https://github.com/Karim93160/Dark-Web/blob/8be7b4bb19b02ca9f6e1117804549cf706486509/20250620_151304.gif)
 
 ## 🚨 Warning - Ethical Use Only 🚨
 
@@ -12,9 +12,6 @@
 Any use of Exfiltration-Agent on unauthorized systems is strictly illegal and contrary to cybersecurity ethics. The creators and contributors of this project disclaim all responsibility for any abusive or malicious use.
 
 **Use it responsibly and only within legal and ethical frameworks.**
-
-![GitHub Gif](https://github.com/Karim93160/Dark-Web/blob/e76461ec9779358fbe2c8cf47e63a6e0d4702990/output1.gif)
-
 
 ## ✨ Project Overview
 
