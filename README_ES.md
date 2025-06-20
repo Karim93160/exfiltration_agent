@@ -237,7 +237,7 @@ Este proyecto se distribuye bajo la Licencia MIT. Esto significa que es libre de
 <h2>🌿 Exfiltration-Agent - Código de Conducta 🌿</h2>
 <p>
 Estamos comprometidos a crear un ambiente acogedor y respetuoso para todos los contribuyentes.
-Por favor, tómese un momento para leer nuestro <a href="CODIGO_DE_CONDUCTA.md">Código de Conducta</a>.
+Por favor, tómese un momento para leer nuestro <a href="CODE_OF_CONDUCT.md">Código de Conducta</a>.
 Al participar en este proyecto, usted acepta cumplir con sus términos.
 </p>
 <p>
