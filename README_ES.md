@@ -13,7 +13,8 @@ Cualquier uso de Exfiltration-Agent en sistemas no autorizados es estrictamente 
 
 ## ✨ Visión General del Proyecto
 
-Exfiltration-Agent es una solución de ingeniería de seguridad ofensiva diseñada para simular con precisión tácticas avanzadas de exfiltración de datos. Construido para el sigilo, la robustez y la modularidad, este agente permite a los miembros del Red Team y analistas de seguridad probar proactivamente la resiliencia de sus infraestructuras.
+Exfiltration-Agent es una 8
+solución de ingeniería de seguridad ofensiva diseñada para simular con precisión tácticas avanzadas de exfiltración de datos. Construido para el sigilo, la robustez y la modularidad, este agente permite a los miembros del Red Team y analistas de seguridad probar proactivamente la resiliencia de sus infraestructuras.
 
 Ya sea que su objetivo sea evaluar la detección de fugas de datos, la efectividad de los firewalls o la capacidad de sus sistemas para resistir agentes discretos, Exfiltration-Agent ofrece control granular sobre sus operaciones a través de una interfaz web intuitiva.
 
@@ -148,9 +149,11 @@ El panel de control es su interfaz gráfica completa para gestionar el agente.
 
 1. **Acceda al Panel de Control**:
    Abra el navegador web de su dispositivo Android e ingrese la dirección:
+
    ```
    http://127.0.0.1:8050
    ```
+
    *(Si el puerto 8050 ya está en uso, aparecerá un mensaje de error en la terminal de Termux. Deberá modificar la línea `port=8050` en el archivo `control_panel.py` a otro puerto, como 8051, y luego reiniciar el script.)*
 
 2. **Primera Configuración**:
@@ -265,4 +268,3 @@ Haga clic en el botón de abajo para abrir directamente un nuevo informe de erro
 </a>
 </p>
 </div>
-```
