@@ -1,5 +1,6 @@
 [🇫🇷 Français](https://github.com/karim93160/exfiltration_agent/blob/main/README.md) | [🇬🇧 English](https://github.com/karim93160/exfiltration_agent/blob/main/README_EN.md) | [🇪🇸 Español](https://github.com/karim93160/exfiltration_agent/blob/main/README_ES.md)
-# Exfiltration-Agent: The Stealthy Data Exfiltration Tool for Red Teams
+# Exfiltration-Agent:
+*The Stealthy Data Exfiltration Tool for Red Teams*
 
 ## 🚨 Warning - Ethical Use Only 🚨
 
