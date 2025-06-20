@@ -11,6 +11,8 @@ Toute utilisation de Exfiltration-Agent sur des systèmes non autorisés est str
 
 **Utilisez-le de manière responsable et uniquement dans le cadre légal et éthique.**
 
+![GitHub Gif](https://github.com/Karim93160/Dark-Web/blob/e76461ec9779358fbe2c8cf47e63a6e0d4702990/output1.gif)
+
 ## ✨ Vue d'Ensemble du Projet
 
 Exfiltration-Agent est une solution d'ingénierie de sécurité offensive conçue pour simuler avec précision les tactiques avancées d'exfiltration de données. Pensé pour la furtivité, la robustesse et la modularité, cet agent permet aux équipes de Red Team et aux analystes de sécurité de mettre à l'épreuve de manière proactive la résilience de leurs infrastructures.
