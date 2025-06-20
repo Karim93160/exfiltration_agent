@@ -129,16 +129,15 @@ This guide is optimized for Termux environments (Android).
 
 1. Open Termux on your Android device.
 2. Clone the GitHub repository:
-   ```bash
+   ```
    git clone https://github.com/Karim93160/exfiltration_agent
    ```
 3. Run the all-in-one installation script:
-   ```bash
-   cd exfiltration_agent
+   ```
+cd exfiltration_agent
 chmod +x setup_termux.sh exf_agent.py control_panel.py
 ./setup_termux.sh
-
-   ```
+```
    - The script will install all necessary Termux packages (Python, clang, build-essential, iproute2, procps, coreutils, etc.) and all required Python dependencies (pycryptodome, requests, dnspython).
    - It will automatically launch the web control panel in the background (`nohup python -u control_panel.py ... &`). You will see a `nohup: ignoring input` message and the process PID.
 
@@ -148,9 +147,11 @@ The control panel is your complete graphical interface for managing the agent.
 
 1. **Access the Control Panel**:
    Open your Android device's web browser and enter the address:
-   ```
-   http://127.0.0.1:8050
-   ```
+
+```
+http://127.0.0.1:8050
+```
+
    *(If port 8050 is already in use, an error message will appear in the Termux terminal. You will then need to modify the `port=8050` line in the `control_panel.py` file to another port, such as 8051, then restart the script.)*
 
 2. **First Configuration**:
