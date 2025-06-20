@@ -122,63 +122,58 @@ Esta guía está optimizada para entornos Termux (Android).
 
 ### Requisitos Previos
 
-- Un dispositivo Android con Termux instalado.
-- Una conexión a Internet activa.
-- (Opcional pero altamente recomendado) Una cuenta en webhook.site para probar fácilmente la exfiltración HTTP/HTTPS, o un servidor C2 que controle.
+- Un dispositivo Android con Termux instalado
+- Conexión a internet activa
+- (Opcional pero altamente recomendado) Una cuenta en webhook.site para probar fácilmente la exfiltración HTTP/HTTPS, o un servidor C2 que controles
 
-### Pasos de Instalación Automatizados
+### Pasos de Instalación Automatizada
 
-1. Abra Termux en su dispositivo Android.
-2. Clone el repositorio de GitHub:
+1. Abre Termux en tu dispositivo Android
+2. Clona el repositorio de GitHub:
    ```bash
    git clone https://github.com/Karim93160/exfiltration_agent
    ```
-3. Ejecute el script de instalación todo-en-uno:
- 
-```cd exfiltration_agent
-chmod +x setup_termux.sh exf_agent.py control_panel.py
-./setup_termux.sh
-
-```
-
-   - El script instalará todos los paquetes necesarios de Termux (Python, clang, build-essential, iproute2, procps, coreutils, etc.) y todas las dependencias de Python requeridas (pycryptodome, requests, dnspython).
-   - Lanzará automáticamente el panel de control web en segundo plano (`nohup python -u control_panel.py ... &`). Verá un mensaje `nohup: ignoring input` y el PID del proceso.
-
-### Acceso Inicial y Configuración a través del Panel de Control Web
-
-El panel de control es su interfaz gráfica completa para gestionar el agente.
-
-1. **Acceda al Panel de Control**:
-   Abra el navegador web de su dispositivo Android e ingrese la dirección:
-
-   ```http://127.0.0.1:8050```
-
-   *(Si el puerto 8050 ya está en uso, aparecerá un mensaje de error en la terminal de Termux. Deberá modificar la línea `port=8050` en el archivo `control_panel.py` a otro puerto, como 8051, y luego reiniciar el script.)*
-
-2. **Primera Configuración**:
-   - En la primera apertura (después de la generación por `setup_termux.sh`), la interfaz mostrará una clave AES generada automáticamente en el campo "Clave AES".
-   - **Acción Crucial**: En el campo "Objetivo de Exfiltración (URL o IP:Puerto)", reemplace la URL predeterminada con su URL única de webhook.site o la dirección de su propio servidor de control C2. Aquí es donde el agente enviará los datos.
-   - Todos los demás campos (ruta de escaneo, tipos de archivos, etc.) estarán pre-llenados con valores predeterminados inteligentes (`/data/data/com.termux/files/home/storage/shared` es un buen punto de partida para el almacenamiento interno de Android).
-
-3. **Guarde su Configuración**:
-   Una vez que haya personalizado las opciones, haga clic en el botón "Guardar Configuración". Esto guardará todas las configuraciones que haya definido en el archivo `~/exfiltrationagent/sharedconfig.json`. De esta manera, la próxima vez que abra el panel, sus preferencias se cargarán automáticamente.
-
-### Uso Diario del Agente a través de la Interfaz Web
-
-Después de la configuración inicial, el uso es muy simple:
-
-1. **Inicie el Panel de Control (si no está ya en ejecución)**:
-   Si ha cerrado Termux o detenido el panel, reinícielo desde el directorio del agente:
-
-   ```cd ~/exfiltration_agent
-nohup python -u controlpanel.py > controlpanel.log 2>&1 &
+3. Ejecuta el script de instalación todo-en-uno:
+   ```bash
+   cd exfiltration_agent
+   chmod +x setup_termux.sh exf_agent.py control_panel.py
+   ./setup_termux.sh
    ```
+   - El script instalará todos los paquetes necesarios de Termux (Python, clang, build-essential, iproute2, procps, coreutils, etc.) y todas las dependencias de Python requeridas (pycryptodome, requests, dnspython)
+   - Iniciará automáticamente el panel de control web en segundo plano (`nohup python -u control_panel.py ... &`). Verás un mensaje `nohup: ignoring input` y el PID del proceso
 
-   Luego acceda nuevamente a ```http://127.0.0.1:8050```
-   en su navegador
+### Acceso y Configuración Inicial del Panel de Control Web
 
-2. **Configure y Lance el Agente**:
-   - Los campos estarán pre-llenados con su última configuración guardada.
+El panel de control es tu interfaz gráfica completa para gestionar el agente.
+
+1. **Accede al Panel de Control**:
+   Abre el navegador web de tu dispositivo Android e ingresa:
+   ```
+   http://127.0.0.1:8050
+   ```
+   *(Si el puerto 8050 ya está en uso, aparecerá un mensaje de error en la terminal de Termux. Deberás modificar la línea `port=8050` en el archivo `control_panel.py` por otro puerto como 8051, y luego reiniciar el script.)*
+
+2. **Configuración Inicial**:
+   - En el primer inicio (tras la generación por `setup_termux.sh`), la interfaz mostrará una clave AES generada automáticamente en el campo "Clave AES"
+   - **Acción Crucial**: En el campo "Objetivo de Exfiltración (URL o IP:Puerto)", reemplaza la URL predeterminada por tu URL única de webhook.site o la dirección de tu propio servidor de control C2. Aquí es donde el agente enviará los datos
+   - Todos los demás campos (ruta a escanear, tipos de archivo, etc.) estarán pre-llenados con valores predeterminados inteligentes (`/data/data/com.termux/files/home/storage/shared` es un buen punto de partida para el almacenamiento interno de Android)
+
+3. **Guarda tu Configuración**:
+   Una vez personalizadas las opciones, haz clic en el botón "Guardar Configuración". Esto guardará todos tus parámetros en el archivo `~/exfiltrationagent/sharedconfig.json`. La próxima vez que abras el panel, tus preferencias se cargarán automáticamente
+
+### Uso Diario del Agente mediante la Interfaz Web
+
+Tras la configuración inicial, el uso es muy sencillo:
+
+1. **Inicia el Panel de Control (si no está ya en ejecución)**:
+   Si has cerrado Termux o detenido el panel, reinícialo desde el directorio del agente:
+   ```bash
+   cd ~/exfiltration_agent
+   nohup python -u control_panel.py > control_panel.log 2>&1 &
+   ```
+   Luego accede nuevamente a `http://127.0.0.1:8050` en tu navegador
+
+- Los campos estarán pre-llenados con su última configuración guardada.
    - Ajuste la configuración según el escenario de prueba deseado (nueva ubicación de escaneo, nuevas palabras clave, cambio de método de exfiltración, etc.).
    - Haga clic en el botón "Iniciar Agente". El agente se ejecutará en segundo plano, discretamente, y comenzará sus operaciones.
 
