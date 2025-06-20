@@ -121,58 +121,56 @@ This guide is optimized for Termux environments (Android).
 
 ### Prerequisites
 
-- An Android device with Termux installed.
-- An active internet connection.
-- (Optional but highly recommended) An account on webhook.site to easily test HTTP/HTTPS exfiltration, or a C2 server you control.
+- An Android device with Termux installed
+- An active internet connection
+- (Optional but highly recommended) A webhook.site account to easily test HTTP/HTTPS exfiltration, or a C2 server you control
 
 ### Automated Installation Steps
 
-1. Open Termux on your Android device.
+1. Open Termux on your Android device
 2. Clone the GitHub repository:
-   ```
+   ```bash
    git clone https://github.com/Karim93160/exfiltration_agent
    ```
 3. Run the all-in-one installation script:
+   ```bash
+   cd exfiltration_agent
+   chmod +x setup_termux.sh exf_agent.py control_panel.py
+   ./setup_termux.sh
    ```
-cd exfiltration_agent
-chmod +x setup_termux.sh exf_agent.py control_panel.py
-./setup_termux.sh
-```
-   - The script will install all necessary Termux packages (Python, clang, build-essential, iproute2, procps, coreutils, etc.) and all required Python dependencies (pycryptodome, requests, dnspython).
-   - It will automatically launch the web control panel in the background (`nohup python -u control_panel.py ... &`). You will see a `nohup: ignoring input` message and the process PID.
+   - The script will install all required Termux packages (Python, clang, build-essential, iproute2, procps, coreutils, etc.) and all necessary Python dependencies (pycryptodome, requests, dnspython)
+   - It will automatically launch the web control panel in background (`nohup python -u control_panel.py ... &`). You'll see a `nohup: ignoring input` message and the process PID
 
-### Initial Access and Configuration via Web Control Panel
+### Web Control Panel Access and Initial Configuration
 
-The control panel is your complete graphical interface for managing the agent.
+The control panel is your complete graphical interface to manage the agent.
 
 1. **Access the Control Panel**:
-   Open your Android device's web browser and enter the address:
+   Open your Android device's web browser and enter:
+   ```
+   http://127.0.0.1:8050
+   ```
+   *(If port 8050 is already in use, an error message will appear in the Termux terminal. You'll then need to modify the `port=8050` line in the `control_panel.py` file to another port like 8051, then restart the script.)*
 
-```
-http://127.0.0.1:8050
-```
+2. **Initial Configuration**:
+   - At first launch (after generation by `setup_termux.sh`), the interface will display an auto-generated AES key in the "AES Key" field
+   - **Critical Action**: In the "Exfiltration Target (URL or IP:Port)" field, replace the default URL with your unique webhook.site URL or your own C2 control server address. This is where the agent will send data
+   - All other fields (scan path, file types, etc.) will be pre-filled with smart default values (`/data/data/com.termux/files/home/storage/shared` is a good starting point for Android internal storage)
 
-   *(If port 8050 is already in use, an error message will appear in the Termux terminal. You will then need to change the line `port=8050` in the `control_panel.py` file to another port, such as 8051, and then restart the script.)*
+3. **Save Your Configuration**:
+   After customizing the options, click the "Save Configuration" button. This will save all your settings to the `~/exfiltrationagent/sharedconfig.json` file. Next time you open the panel, your preferences will load automatically
 
-2. **Initial Configuration** :
-   - On the first launch (after running `setup_termux.sh`), the interface will display an automatically generated AES key in the "AES Key" field.
-   - **Crucial Action** : In the field "Exfiltration Target (URL or IP:Port)", replace the default URL with your unique webhook.site URL or your own C2 server address. This is where the agent will send the data.
-   - All other fields (scan path, file types, etc.) will be pre-filled with smart default values (`/data/data/com.termux/files/home/storage/shared` is a good starting point for Android internal storage).
+### Daily Agent Usage via Web Interface
 
-3. **Save your Configuration** :
-   Once you have customized the options, click on the "Save Configuration" button. This will store all the settings you have defined in the file `~/exfiltrationagent/sharedconfig.json`. So the next time you open the panel, your preferences will be automatically loaded.
+After initial setup, usage is very simple:
 
-### Daily Use of the Agent via the Web Interface
-
-After the initial configuration, usage is very simple:
-
-1. **Launch the Control Panel (if not already running)** :
-   If you have closed Termux or stopped the panel, relaunch it from the agent directory:
+1. **Launch the Control Panel (if not already running)**:
+   If you've closed Termux or stopped the panel, restart it from the agent directory:
    ```bash
    cd ~/exfiltration_agent
-   nohup python -u controlpanel.py > controlpanel.log 2>&1 &
-
-Then access http://127.0.0.1:8050 in your browser.
+   nohup python -u control_panel.py > control_panel.log 2>&1 &
+   ```
+   Then access `http://127.0.0.1:8050` again in your browser 
 
 2. **Configure and Launch the Agent**:
    - Fields will be pre-filled with your last saved configuration.
