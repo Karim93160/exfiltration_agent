@@ -12,7 +12,7 @@ Toute utilisation de Exfiltration-Agent sur des systèmes non autorisés est str
 
 **Utilisez-le de manière responsable et uniquement dans le cadre légal et éthique.**
 
-![GitHub Gif](https://github.com/Karim93160/Dark-Web/blob/e76461ec9779358fbe2c8cf47e63a6e0d4702990/output1.gif)
+![GitHub Gif](https://github.com/Karim93160/Dark-Web/blob/8be7b4bb19b02ca9f6e1117804549cf706486509/20250620_151304.gif)
 
 ## ✨ Vue d'Ensemble du Projet
 
