@@ -174,7 +174,8 @@ Tras la configuración inicial, el uso es muy sencillo:
    Si has cerrado Termux o detenido el panel, reinícialo desde el directorio del agente:
    ```bash
    cd ~/exfiltration_agent
-   nohup python -u control_panel.py > control_panel.log 2>&1 &
+   python3 control_panel.py
+   
    ```
    Luego accede nuevamente a `http://127.0.0.1:8050` en tu navegador
 
