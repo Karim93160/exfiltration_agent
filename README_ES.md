@@ -241,7 +241,7 @@ Por favor, tómese un momento para leer nuestro <a href="CODE_OF_CONDUCT.md">Có
 Al participar en este proyecto, usted acepta cumplir con sus términos.
 </p>
 <p>
-<a href="CODIGO_DE_CONDUCTA.md">
+<a href="CODE_OF_CONDUCT.md">
 <img src="https://img.shields.io/badge/C%C3%B3digo%20de%20Conducta-Lea%20Por%20Favor-blueviolet?style=for-the-badge&logo=github" alt="Código de Conducta">
 </a>
 </p>
