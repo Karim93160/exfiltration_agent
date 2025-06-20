@@ -170,11 +170,13 @@ Después de la configuración inicial, el uso es muy simple:
 
 1. **Inicie el Panel de Control (si no está ya en ejecución)**:
    Si ha cerrado Termux o detenido el panel, reinícielo desde el directorio del agente:
-   ```bash
-   cd ~/exfiltration_agent
-   nohup python -u controlpanel.py > controlpanel.log 2>&1 &
+
+   ```cd ~/exfiltration_agent
+nohup python -u controlpanel.py > controlpanel.log 2>&1 &
    ```
-   Luego acceda nuevamente a `http://127.0.0.1:8050` en su navegador.
+
+   Luego acceda nuevamente a ```http://127.0.0.1:8050```
+   en su navegador
 
 2. **Configure y Lance el Agente**:
    - Los campos estarán pre-llenados con su última configuración guardada.
