@@ -2,7 +2,7 @@
 [🇫🇷 Français](https://github.com/karim93160/exfiltration_agent/blob/main/README.md) | [🇬🇧 English](https://github.com/karim93160/exfiltration_agent/blob/main/README_EN.md) | [🇪🇸 Español](https://github.com/karim93160/exfiltration_agent/blob/main/README_ES.md)
 ## Exfiltration-Agent :
 *L'outil furtif d'exfiltration de données pour la Red Team*
-##*Exemple d'utilisation :*
+## Exemple d'utilisation :
 ![GitHubGif](https://github.com/Karim93160/Dark-Web/blob/e4cbe52ef904a503e244a9a91febb626a01fbee4/1000100626.gif.gif)
 ## 🚨 Avertissement - Usage Éthique Uniquement 🚨
 
