@@ -260,3 +260,16 @@ _________
   </p>
 </div>
 
+<div align="center">
+  <h2>💬 Communauté ip-nose - Rejoignez la Discussion ! 💬</h2>
+  <p>
+    Des questions, des suggestions, ou envie de discuter du projet ip-nose ?
+    Rejoignez la communauté sur GitHub Discussions !
+  </p>
+  <p>
+    <a href="https://github.com/karim93160/exfiltration_agent/discussions">
+      <img src="https://img.shields.io/badge/Rejoindre%20la%20Communauté-Discussions-blue?style=for-the-badge&logo=github" alt="Rejoindre la Communauté">
+    </a>
+  </p>
+</div>
+
