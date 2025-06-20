@@ -11,6 +11,9 @@ Any use of Exfiltration-Agent on unauthorized systems is strictly illegal and co
 
 **Use it responsibly and only within legal and ethical frameworks.**
 
+![GitHub Gif](https://github.com/Karim93160/Dark-Web/blob/e76461ec9779358fbe2c8cf47e63a6e0d4702990/output1.gif)
+
+
 ## ✨ Project Overview
 
 Exfiltration-Agent is an offensive security engineering solution designed to accurately simulate advanced data exfiltration tactics. Built for stealth, robustness, and modularity, this agent allows Red Team members and security analysts to proactively test the resilience of their infrastructures.
