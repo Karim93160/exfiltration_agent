@@ -206,18 +206,56 @@ exfiltration_agent/
 ├── setup_termux.sh           # Script d'installation automatisée pour Termux
 ```
 
-## 🤝 Contributions & Support
+## *🤝 Contributions*
 
-Les contributions sont les bienvenues ! Si vous avez des idées d'amélioration, des rapports de bugs, ou des suggestions, n'hésitez pas à :
+**Les contributions sont les bienvenues ! Si vous souhaitez améliorer ip-nose, corriger des bugs ou ajouter de nouvelles fonctionnalités, veuillez consulter notre Guide de Contribution.**
 
-- **Ouvrir une Issue** : Pour rapporter un bug ou suggérer une nouvelle fonctionnalité.
-- **Soumettre une Pull Request** : Pour proposer des modifications ou des ajouts de code.
+[![Sponsor me on GitHub](https://img.shields.io/badge/Sponsor-GitHub-brightgreen.svg)](https://github.com/sponsors/karim93160)
+[![Buy me a coffee](https://img.shields.io/badge/Donate-Buy%20Me%20A%20Coffee-FFDD00.svg)](https://www.buymeacoffee.com/karim93160)
+[![Support me on Ko-fi](https://img.shields.io/badge/Donate-Ko--fi-F16061.svg)](https://ko-fi.com/karim93160)
+[![Support me on Patreon](https://img.shields.io/badge/Patreon-Support%20me-FF424D.svg)](https://www.patreon.com/karim93160)
+[![Donate on Liberapay](https://img.shields.io/badge/Donate-Liberapay-F6C915.svg)](https://liberapay.com/karim93160/donate)
 
-Votre aide est précieuse pour faire évoluer Exfiltration-Agent !
 
-## 🛡️ Licence
+_________
 
-Ce projet est distribué sous la licence MIT. Cela signifie que vous êtes libre d'utiliser, de copier, de modifier, de fusionner, de publier, de distribuer, de sous-licencier et/ou de vendre des copies du Logiciel, sous réserve des conditions stipulées dans la licence.
+## Licence 📜
 
-**MIT License**
-```
+hashish est distribué sous la licence [MIT License](https://github.com/Karim93160/exfiltration_agent/blob/4c81c60cec39f140f7f581957daef21368ddcda0/LICENSE)
+
+_________
+
+## Contact 📧
+
+Pour toute question ou suggestion, n'hésitez pas à ouvrir une [issue sur GitHub](https://github.com/Karim93160/exfiltration_agent/issues) ou à nous contacter par email :
+
+[![Contact par Email](https://img.shields.io/badge/Contact-par%20Email-blue.svg)](mailto:karim9316077185@gmail.com)
+
+_________
+<div align="center">
+  <h2>🌿 exfiltration_agent - Code de Conduite 🌿</h2>
+  <p>
+    Nous nous engageons à créer un environnement accueillant et respectueux pour tous les contributeurs.
+    Veuillez prendre un moment pour lire notre <a href="CODE_OF_CONDUCT.md">Code de Conduite</a>.
+    En participant à ce projet, vous acceptez de respecter ses termes.
+  </p>
+  <p>
+    <a href="CODE_OF_CONDUCT.md">
+      <img src="https://img.shields.io/badge/Code%20of%20Conduct-Veuillez%20Lire-blueviolet?style=for-the-badge&logo=github" alt="Code de Conduite">
+    </a>
+  </p>
+</div>
+
+<div align="center">
+  <h2>🐞 Signaler un Bug dans exfiltration_agent 🐞</h2>
+  <p>
+    Rencontrez-vous un problème avec exfiltration_agent ? Aidez-nous à améliorer le projet en signalant les bugs !
+    Cliquez sur le bouton ci-dessous pour ouvrir directement un nouveau rapport de bug pré-rempli.
+  </p>
+  <p>
+    <a href="https://github.com/karim93160/exfiltration_agent/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=">
+      <img src="https://img.shields.io/badge/Signaler%20un%20Bug-Ouvrir%20une%20Issue-red?style=for-the-badge&logo=bugsnag" alt="Signaler un Bug">
+    </a>
+  </p>
+</div>
+
