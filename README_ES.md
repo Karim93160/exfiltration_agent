@@ -173,6 +173,7 @@ Tras la configuración inicial, el uso es muy sencillo:
    ```
    Luego accede nuevamente a `http://127.0.0.1:8050` en tu navegador
 
+2. **Configure y Lance el Agente**:
 - Los campos estarán pre-llenados con su última configuración guardada.
    - Ajuste la configuración según el escenario de prueba deseado (nueva ubicación de escaneo, nuevas palabras clave, cambio de método de exfiltración, etc.).
    - Haga clic en el botón "Iniciar Agente". El agente se ejecutará en segundo plano, discretamente, y comenzará sus operaciones.
