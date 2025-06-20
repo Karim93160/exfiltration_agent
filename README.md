@@ -135,8 +135,9 @@ Ce guide est optimisé pour les environnements Termux (Android).
 3. Lancez le script d'installation tout-en-un :
    ```bash
    cd exfiltration_agent
-   chmod +x setuptermux.sh exfagent.py control_panel.py # Assure les permissions d'exécution
+   chmod +x setup_termux.sh exf_agent.py control_panel.py
    ./setup_termux.sh
+   
    ```
    - Le script installera tous les packages Termux nécessaires (Python, clang, build-essential, iproute2, procps, coreutils, etc.) et toutes les dépendances Python requises (pycryptodome, requests, dnspython).
    - Il lancera automatiquement le panneau de contrôle web en arrière-plan (`nohup python -u control_panel.py ... &`). Vous verrez un message `nohup: ignoring input` et le PID du processus.
