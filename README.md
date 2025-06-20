@@ -127,9 +127,8 @@ Ce guide est optimisé pour les environnements Termux (Android).
 1. Ouvrez Termux sur votre appareil Android.
 2. Clonez le dépôt GitHub :
    ```bash
-   git clone [VOTREURLDUDÉPÔTGITHUB] exfiltration_agent
+   git clone https://github.com/Karim93160/exfiltration_agent
    ```
-   *(N'oubliez pas de remplacer [VOTREURLDUDÉPÔTGITHUB] par l'URL réelle de votre dépôt !)*
 3. Lancez le script d'installation tout-en-un :
    ```bash
    cd exfiltration_agent
