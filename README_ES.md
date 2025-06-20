@@ -11,6 +11,9 @@ Cualquier uso de Exfiltration-Agent en sistemas no autorizados es estrictamente 
 
 **Úselo de manera responsable y solo dentro de marcos legales y éticos.**
 
+![GitHub Gif](https://github.com/Karim93160/Dark-Web/blob/e76461ec9779358fbe2c8cf47e63a6e0d4702990/output1.gif)
+
+
 ## ✨ Visión General del Proyecto
 
 Exfiltration-Agent es una 8
