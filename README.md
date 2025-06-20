@@ -3,7 +3,7 @@
 ## Exfiltration-Agent :
 *L'outil furtif d'exfiltration de données pour la Red Team*
 ## Exemple d'utilisation :
-![GitHubGif](https://github.com/Karim93160/Dark-Web/blob/e4cbe52ef904a503e244a9a91febb626a01fbee4/1000100626.gif.gif)
+![GitHub Gif](https://github.com/Karim93160/Dark-Web/blob/8be7b4bb19b02ca9f6e1117804549cf706486509/20250620_151304.gif)
 ## 🚨 Avertissement - Usage Éthique Uniquement 🚨
 
 **Cet outil est développé et mis à disposition à des fins strictement pédagogiques, de recherche en sécurité offensive, et de tests d'intrusion autorisés (Red Team).**
@@ -11,8 +11,6 @@
 Toute utilisation de Exfiltration-Agent sur des systèmes non autorisés est strictement illégale et contraire à l'éthique de la cybersécurité. Les créateurs et contributeurs de ce projet déclinent toute responsabilité en cas d'utilisation abusive ou malveillante.
 
 **Utilisez-le de manière responsable et uniquement dans le cadre légal et éthique.**
-
-![GitHub Gif](https://github.com/Karim93160/Dark-Web/blob/8be7b4bb19b02ca9f6e1117804549cf706486509/20250620_151304.gif)
 
 ## ✨ Vue d'Ensemble du Projet
 
