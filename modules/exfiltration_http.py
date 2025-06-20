@@ -102,3 +102,4 @@ if __name__ == "__main__":
 
     print("\n[+] Tests du module HTTPExfiltrator terminés.")
     print("[!] N'oubliez pas que 'verify=False' est utilisé pour les tests et n'est PAS recommandé en production.")
+
