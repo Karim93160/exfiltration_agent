@@ -152,27 +152,27 @@ The control panel is your complete graphical interface for managing the agent.
 http://127.0.0.1:8050
 ```
 
-   *(If port 8050 is already in use, an error message will appear in the Termux terminal. You will then need to modify the `port=8050` line in the `control_panel.py` file to another port, such as 8051, then restart the script.)*
+   *(If port 8050 is already in use, an error message will appear in the Termux terminal. You will then need to change the line `port=8050` in the `control_panel.py` file to another port, such as 8051, and then restart the script.)*
 
-2. **First Configuration**:
-   - On first opening (after generation by `setup_termux.sh`), the interface will display an automatically generated AES key in the "AES Key" field.
-   - **Crucial Action**: In the "Exfiltration Target (URL or IP:Port)" field, replace the default URL with your unique webhook.site URL or the address of your own C2 control server. This is where the agent will send the data.
-   - All other fields (scan path, file types, etc.) will be pre-filled with intelligent default values (`/data/data/com.termux/files/home/storage/shared` is a good starting point for Android's internal storage).
+2. **Initial Configuration** :
+   - On the first launch (after running `setup_termux.sh`), the interface will display an automatically generated AES key in the "AES Key" field.
+   - **Crucial Action** : In the field "Exfiltration Target (URL or IP:Port)", replace the default URL with your unique webhook.site URL or your own C2 server address. This is where the agent will send the data.
+   - All other fields (scan path, file types, etc.) will be pre-filled with smart default values (`/data/data/com.termux/files/home/storage/shared` is a good starting point for Android internal storage).
 
-3. **Save Your Configuration**:
-   Once you have customized the options, click the "Save Configuration" button. This will save all the settings you have defined in the `~/exfiltrationagent/sharedconfig.json` file. This way, the next time you open the panel, your preferences will be automatically loaded.
+3. **Save your Configuration** :
+   Once you have customized the options, click on the "Save Configuration" button. This will store all the settings you have defined in the file `~/exfiltrationagent/sharedconfig.json`. So the next time you open the panel, your preferences will be automatically loaded.
 
 ### Daily Use of the Agent via the Web Interface
 
 After the initial configuration, usage is very simple:
 
-1. **Launch the Control Panel (if not already running)**:
-   If you have closed Termux or stopped the panel, restart it from the agent's directory:
+1. **Launch the Control Panel (if not already running)** :
+   If you have closed Termux or stopped the panel, relaunch it from the agent directory:
    ```bash
    cd ~/exfiltration_agent
    nohup python -u controlpanel.py > controlpanel.log 2>&1 &
-   ```
-   Then access `http://127.0.0.1:8050` again in your browser.
+
+Then access http://127.0.0.1:8050 in your browser.
 
 2. **Configure and Launch the Agent**:
    - Fields will be pre-filled with your last saved configuration.
