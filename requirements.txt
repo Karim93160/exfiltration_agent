@@ -1,5 +1,6 @@
 pycryptodome
 pycryptodomex
 requests
+beautifulsoup4
 dnspython
 dash
